@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 13px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body{
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  color: #4E5765;
+  background-color: #eee;
+  width: 100%;
+  height: 100vh;
+  /*to align in center*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+}
+.article{
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+   height: 320px;
+   background-color: #ECF2F8;
+   box-shadow: 2px 13px 16px rgba(0,0,0,0.1);/*for very light effect*/
+   
+   border-radius: 10px;
+}
+.image{
+  
+  width: 40%;
+  position: relative;
+  z-index: 1;
+  
+  border-bottom-left-radius:10px ;
+  border-top-left-radius:10px ;
+  flex-basis: 40%;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("images/drawers.jpg") center no-repeat;
+  background-size: cover;
+    /* z-index: -1; */
+  border-bottom-left-radius:10px ;
+  border-top-left-radius:10px ;
+}
+.info{
+  background-color: #ECF2F8;
+  padding: 32px 48px;
+  flex-basis: 60%;
+  position: relative;
+  
+  border-bottom-right-radius:8px ;
+  border-top-right-radius:8px ;
+}
+.post_title{
+  font-size: 24px;
+  line-height: 1;
+}
+@media screen and (min-width: 375px){
+  .article{
+    flex-direction: row;
+    max-height: 1440px;
+  }
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  float: right;
+  border-radius: 50%;
+  background-color: #6D7F97;
+}
+.meta{
+  position: relative;
+  float: bottom;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  height:56px;
+  display:flex;
+  background-color: #4E5765;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -120px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%; 
+   margin-left: -5px;
+  border-width: 5px;
+  
+  border-style: solid;
+  border-color: #314866 transparent transparent transparent;
+}
+
+div.btn{
+  margin: 8px;
+  position: relative;
+  align-items: center;
+  background-color: #6D7F97;
+  border-radius: 50%;
+  padding: 8px;
+  
+}
+.pic {
+  display: inline-block;
+  
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  margin-top: 8px;
+  background: url("images/avatar-michelle.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+ 
+}
+span.publcation_info{
+  position: absolute;
+  
+  margin-left: 88px;
+  margin-top: 8px;
+  padding: 8px;
+}
+.meta{
+  
+  height: 80px;
+  margin:32px 0px;
+  padding: 8px;
+}
+.share{
+  display: inline-block;
+  position: relative;
+  /* border: 1px solid red; */
+  width:25%;
+  padding: 8px;
+  margin: auto;
+  height: auto;
+}
