@@ -1,4 +1,4 @@
- /* Dark Violet: #2D2640
+/* Dark Violet: #2D2640
  Grayish Blue: #95A9C6
 
 - Very Dark Violet: #2B272F
@@ -8,127 +8,195 @@
 /* body : font-family: 'Karla', sans-serif; */
 
 /*Intial css to*/
-*{
-    box-sizing: border-box;
-    
+* {
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Karla', sans-serif;
-    margin:0;
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
 }
-h1,h3{
-    font-family: 'DM Serif Display', serif;
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", serif;
 }
-.container{
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 100%;
-    width: 1200px;
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 100%;
+  width: 1200px;
 }
-.btn{
-    border: 2px solid white;
-    padding: 8px 16px;
-    margin-top: 24px;
-    color: white;
-    background-color: transparent;
-    cursor: pointer;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.btn {
+  border: 2px solid white;
+  padding: 8px 16px;
+  margin-top: 24px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.btn-nav{
-    color: #2D2640 !important;
-    border: 2px solid #2D2640;
+.btn-nav {
+  color: #2d2640 ;
+  border: 2px solid #2d2640;
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.flex>div{
-    flex: 1;
+.flex > div {
+  flex: 1;
 }
-.start{
-    align-items: flex-start ;
+.start {
+  align-items: flex-start;
+}
+button.btn:hover{
+    color: #2d2640 ;
+    background-color: white;
 }
 
 /*Styling the navigation bar*/
-        
-nav.navbar ul{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
+
+nav.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
 }
-nav.navbar li{
-    margin-left: 32px;
+nav.navbar li {
+  margin-left: 32px;
 }
-nav.navbar li a{
-    text-decoration: none;
-    color: #837D87;
-    letter-spacing: 0;
+nav.navbar li a {
+  text-decoration: none;
+  color: #837d87;
+  letter-spacing: 0;
+}
+#violet-btn{
+  color: #2d2640 
+}
+#violet-btn:hover{
+   background-color: #2D2640;
+   color: white;
 }
 
 /*styling the header section*/
-header{
-     background-color: #2D2640 ;
-     color: white;
-     padding: 50px 0;
-     position: relative;
-     margin-bottom: 200px;
+header {
+  background-color: #2d2640;
+  color: white;
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 200px;
+}
+header * {
+  z-index: 1;
 }
 h1 {
-    font-size: 4em;
-    letter-spacing: 2px;
-    line-height: 1;
-    position: relative;
-    margin: 0;
-    padding-top: 56px;
+  font-size: 4em;
+  letter-spacing: 2px;
+  line-height: 1;
+  position: relative;
+  margin: 0;
+  padding-top: 56px;
 }
-header::after{
-    content: '';
-    background-image: url('./images/bg-pattern-intro-right-desktop.svg');
-    background-repeat: no-repeat;
-    background-position: top right;
-    position: absolute;
-    top:0;
-    right:0;
-    height: 100%;
-    width: 100%;
+header::after {
+  content: "";
+  background-image: url("./images/bg-pattern-intro-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
 }
-header::before{
-    content: '';
-    background-image: url('./images/bg-pattern-intro-left-desktop.svg');
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    position: absolute;
-    bottom: -47%;
-    left:0;
-    height: 100%;
-    width: 100%;
+header::before {
+  content: "";
+  background-image: url("./images/bg-pattern-intro-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: absolute;
+  bottom: -47%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
 }
-h1::before{
-    content: '';
-    background-color: white;
-    position: absolute;
-    top:0;
-    left: 0;
-    height: 1px;
-    width: 140px;
+h1::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 140px;
 }
-.main-img{
-    margin-bottom: -200px; 
-    /* just to make img down if used margin top box size will increase and desired result isnt achived */
+/*
+ dont use before and after henceforth as u cant click on buttons 
+ z- index is solution but use it only if there are 2 patterns else go for bg-img
+ */
+.main-img {
+  margin-bottom: -200px;
+  /* just to make img down if used margin top box size will increase and desired result isnt achived */
 }
 /*adding common section style*/
-section{
 
+section h1::before {
+  background-color: #95a9c6;
 }
-section h1::before{
-    background-color:  #95A9C6;
+.margin-for-heading {
+  margin-top: 90px;
+}
+.bg-dark-voilet {
+  background-color: #2d2640;
+  padding: 58px;
+  color: white;
+  margin: 90px auto;
+  background-image: url("./images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 40% 100%; /*background-size: <x-axis> <y-axis>;*/
+}
+
+.bg-dark-voilet h2 {
+  font-size: 3.5em;
+  padding: 0;
+  width: 53%;
 }
 
 /*styling the footer*/
-footer{
-
+footer {
+  background-color: #fafafa;
+  padding: 30px 0;
+  background-image: url("./images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 35% 54%;
+}
+ul.flex {
+  justify-content: center;
+}
+footer h5 {
+  text-transform: uppercase;
+  color: #837d87;
+}
+footer ul.flex li {
+  margin-left: 20px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer li {
+  margin-bottom: 10px;
+}
+footer li a {
+  color: #2d2640;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.social-btn {
+  border-bottom: 1px solid #837d87;
 }
