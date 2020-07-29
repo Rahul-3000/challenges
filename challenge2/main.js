@@ -13,7 +13,7 @@ pintrest: https://pinterest.com/pin/create/bookmarklet/?media=[post-img]&url=[po
 const toggle = document.getElementById('toggle');
 const menu = document.getElementById('menu');
 
-toggle.addEventListener('click',()=>{
+toggle.addEventListener('click', () => {
     toggle.classList.toggle('show')
     menu.classList.toggle('show');
 }
@@ -24,11 +24,11 @@ const twitter_btn = document.querySelector("a.twitter");
 const pinterest_btn = document.querySelector("a.pintrest");
 const insta_btn = document.querySelector("a.insta");
 
-function share_button(){
+function share_button() {
     let post_url = encodeURI(document.location.href);
     let post_title = encodeURI("Challenge 2 | Insure landing page");
 
-    fb_btn.setAttribute("href",`https://www.facebook.com/sharer.php?u=${post_url}`);
+    fb_btn.setAttribute("href", `https://www.facebook.com/sharer.php?u=${post_url}`);
 
     twitter_btn.setAttribute(
         "href",

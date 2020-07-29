@@ -15,7 +15,7 @@ body {
   font-family: "Karla", sans-serif;
   margin: 0;
 }
-p{
+p {
   line-height: 1.8;
 }
 h1,
@@ -41,7 +41,7 @@ h3 {
   text-transform: uppercase;
 }
 .btn-nav {
-  color: #2d2640 ;
+  color: #2d2640;
   /* display: inline-block; */
   border: 2px solid #2d2640;
 }
@@ -57,15 +57,14 @@ h3 {
 .start {
   align-items: flex-start;
 }
-button.btn:hover{
-    color: #2d2640 ;
-    background-color: white;
+button.btn:hover {
+  color: #2d2640;
+  background-color: white;
 }
 
 /*Styling the navigation bar*/
 
-
-nav.navbar button{
+nav.navbar button {
   display: none;
 }
 nav.navbar ul {
@@ -74,7 +73,7 @@ nav.navbar ul {
   list-style-type: none;
   padding: 0;
 }
-nav.navbar .flex div{
+nav.navbar .flex div {
   align-items: flex-start;
   padding: 25px;
   padding-left: 0;
@@ -89,13 +88,13 @@ nav.navbar li a {
   color: #837d87;
   letter-spacing: 0;
 }
-#violet-btn{
-  color: #2d2640 ;
+#violet-btn {
+  color: #2d2640;
   margin-top: 0;
 }
-#violet-btn:hover{
-   background-color: #2D2640;
-   color: white;
+#violet-btn:hover {
+  background-color: #2d2640;
+  color: white;
 }
 
 /*styling the header section*/
@@ -203,7 +202,7 @@ footer h5 {
 footer ul.flex li {
   margin-left: 20px;
 }
-footer ul.flex li:not(:first-child){
+footer ul.flex li:not(:first-child) {
   margin-left: 16px;
 }
 footer ul {
@@ -218,11 +217,11 @@ footer li a {
   text-transform: uppercase;
   text-decoration: none;
 }
-svg{
-  fill: #837D88;
+svg {
+  fill: #837d88;
 }
-svg:hover{
-  fill:black;
+svg:hover {
+  fill: black;
 }
 .social-btn {
   border-bottom: 1px solid #837d87;
@@ -230,36 +229,35 @@ svg:hover{
 
 /*Moblie styling */
 
-@media screen and (max-width: 768px){
-  body{
+@media screen and (max-width: 768px) {
+  body {
     text-align: center;
   }
-  .flex{
+  .flex {
     flex-direction: column;
   }
-  nav.navbar button{
+  nav.navbar button {
     display: inline;
     background-color: transparent;
     border: 0;
     cursor: pointer;
   }
-  nav.navbar{
+  nav.navbar {
     padding: 20px 0;
   }
- 
-  
+
   /*Moblie nav styling*/
 
-  nav.navbar .flex{
+  nav.navbar .flex {
     flex-direction: row;
   }
-  nav.navbar ul{
+  nav.navbar ul {
     display: none;
   }
-  nav.navbar button{
+  nav.navbar button {
     border: 0;
   }
-  
+
   nav.navbar .hamburger {
     background-color: transparent;
     border: 0px;
@@ -267,94 +265,92 @@ svg:hover{
     cursor: pointer;
     display: flex;
   }
-  nav .hamburger .close{
+  nav .hamburger .close {
     display: none;
   }
-  nav .hamburger.show .open{
+  nav .hamburger.show .open {
     display: none;
   }
-  nav .hamburger.show .close{
+  nav .hamburger.show .close {
     display: block;
   }
-  nav ul.show{
-    background-color: #2B272F;
+  nav ul.show {
+    background-color: #2b272f;
     display: flex;
     flex-direction: column;
     position: fixed;
     /* align-items: center; */
     margin: 0;
-    top:120px;
-    left:0;
+    top: 120px;
+    left: 0;
     height: 100vh;
     width: 100vw;
-    z-index:100;
+    z-index: 100;
     background-image: url("./images/bg-pattern-mobile-nav.svg");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 100% 38%;
-  position: absolute;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% 38%;
+    position: absolute;
   }
-  nav.navbar ul li{
+  nav.navbar ul li {
     margin: 32px 0;
     padding: 8px;
-    
   }
-  
-  nav.navbar ul li:nth-child(4){
-    width: 90%
+
+  nav.navbar ul li:nth-child(4) {
+    width: 90%;
   }
-  nav.navbar ul a{
-      color: white;
-      
+  nav.navbar ul a {
+    color: white;
   }
-  
-  #violet-btn{
-    color: white ;
+
+  #violet-btn {
+    color: white;
     border: 2px solid white;
     height: 56px;
     padding: 16px;
     margin: auto;
     width: 100%;
   }
-  nav.navbar .flex div{
+  nav.navbar .flex div {
     align-items: flex-start;
     padding: 12px;
   }
-  
+
   /*Moblie header styling*/
-  
-  header{
+
+  header {
     padding-top: 0;
     position: relative;
   }
-  header .container{
+  header .container {
     padding: 0;
   }
   header::before {
-  content: "";
-  background-image: url("./images/bg-pattern-intro-left-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: top left;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  z-index: 1;
-}
-header::after {
-  content: "";
-  background-image: url("./images/bg-pattern-intro-right-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  position: absolute;
-  /* bottom: -47%; */
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-}
-  header h1{
+    content: "";
+    background-image: url("./images/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+  }
+  header::after {
+    content: "";
+    background-image: url("./images/bg-pattern-intro-right-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    /* bottom: -47%; */
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+  header h1 {
     width: 80%;
     margin: auto;
     font-size: 56px;
@@ -369,21 +365,21 @@ header::after {
     width: 200px;
     transform: translateX(-50%);
   }
-  .main-img{
+  .main-img {
     margin-bottom: 0;
     width: 100%;
     margin-bottom: -6px;
   }
-  .reverse-flex{
+  .reverse-flex {
     flex-direction: column-reverse;
   }
-  
+
   /*Moblie sections styling especially that violetbox styling*/
-  
-  section.container{
-    width:90%;
+
+  section.container {
+    width: 90%;
   }
-  .bg-dark-voilet{
+  .bg-dark-voilet {
     background-image: url("./images/bg-pattern-how-we-work-mobile.svg");
     padding: 45px;
     background-image: url("./images/bg-pattern-how-we-work-mobile.svg");
@@ -391,21 +387,19 @@ header::after {
     background-position: top right;
     background-size: 54% 100%;
   }
-  .bg-dark-voilet h2{
+  .bg-dark-voilet h2 {
     width: 100%;
     margin-bottom: 24px;
   }
 
   /*Moblie Footer styling*/
-  
-  footer{
+
+  footer {
     background-image: url(./images/bg-pattern-footer-mobile.svg);
     background-size: 100% 14%;
   }
 
   footer ul.flex {
     flex-direction: row;
-  
   }
-
 }
