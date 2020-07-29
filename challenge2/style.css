@@ -15,6 +15,9 @@ body {
   font-family: "Karla", sans-serif;
   margin: 0;
 }
+p{
+  line-height: 1.8;
+}
 h1,
 h2,
 h3 {
@@ -30,6 +33,7 @@ h3 {
   border: 2px solid white;
   padding: 8px 16px;
   margin-top: 24px;
+  /* display: inline-block; */
   color: white;
   background-color: transparent;
   cursor: pointer;
@@ -38,6 +42,7 @@ h3 {
 }
 .btn-nav {
   color: #2d2640 ;
+  /* display: inline-block; */
   border: 2px solid #2d2640;
 }
 
@@ -59,22 +64,34 @@ button.btn:hover{
 
 /*Styling the navigation bar*/
 
+
+nav.navbar button{
+  display: none;
+}
 nav.navbar ul {
   display: flex;
   align-items: center;
   list-style-type: none;
   padding: 0;
 }
+nav.navbar .flex div{
+  align-items: flex-start;
+  padding: 25px;
+  padding-left: 0;
+}
+
 nav.navbar li {
   margin-left: 32px;
 }
 nav.navbar li a {
   text-decoration: none;
+  display: inline-block;
   color: #837d87;
   letter-spacing: 0;
 }
 #violet-btn{
-  color: #2d2640 
+  color: #2d2640 ;
+  margin-top: 0;
 }
 #violet-btn:hover{
    background-color: #2D2640;
@@ -139,6 +156,7 @@ h1::before {
  */
 .main-img {
   margin-bottom: -200px;
+  max-width: 100%;
   /* just to make img down if used margin top box size will increase and desired result isnt achived */
 }
 /*adding common section style*/
@@ -185,6 +203,9 @@ footer h5 {
 footer ul.flex li {
   margin-left: 20px;
 }
+footer ul.flex li:not(:first-child){
+  margin-left: 16px;
+}
 footer ul {
   list-style-type: none;
   padding: 0;
@@ -197,6 +218,194 @@ footer li a {
   text-transform: uppercase;
   text-decoration: none;
 }
+svg{
+  fill: #837D88;
+}
+svg:hover{
+  fill:black;
+}
 .social-btn {
   border-bottom: 1px solid #837d87;
+}
+
+/*Moblie styling */
+
+@media screen and (max-width: 768px){
+  body{
+    text-align: center;
+  }
+  .flex{
+    flex-direction: column;
+  }
+  nav.navbar button{
+    display: inline;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  nav.navbar{
+    padding: 20px 0;
+  }
+ 
+  
+  /*Moblie nav styling*/
+
+  nav.navbar .flex{
+    flex-direction: row;
+  }
+  nav.navbar ul{
+    display: none;
+  }
+  nav.navbar button{
+    border: 0;
+  }
+  
+  nav.navbar .hamburger {
+    background-color: transparent;
+    border: 0px;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+  }
+  nav .hamburger .close{
+    display: none;
+  }
+  nav .hamburger.show .open{
+    display: none;
+  }
+  nav .hamburger.show .close{
+    display: block;
+  }
+  nav ul.show{
+    background-color: #2B272F;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* align-items: center; */
+    margin: 0;
+    top:120px;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    z-index:100;
+    background-image: url("./images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% 38%;
+  position: absolute;
+  }
+  nav.navbar ul li{
+    margin: 32px 0;
+    padding: 8px;
+    
+  }
+  
+  nav.navbar ul li:nth-child(4){
+    width: 90%
+  }
+  nav.navbar ul a{
+      color: white;
+      
+  }
+  
+  #violet-btn{
+    color: white ;
+    border: 2px solid white;
+    height: 56px;
+    padding: 16px;
+    margin: auto;
+    width: 100%;
+  }
+  nav.navbar .flex div{
+    align-items: flex-start;
+    padding: 12px;
+  }
+  
+  /*Moblie header styling*/
+  
+  header{
+    padding-top: 0;
+    position: relative;
+  }
+  header .container{
+    padding: 0;
+  }
+  header::before {
+  content: "";
+  background-image: url("./images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+}
+header::after {
+  content: "";
+  background-image: url("./images/bg-pattern-intro-right-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: absolute;
+  /* bottom: -47%; */
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+  header h1{
+    width: 80%;
+    margin: auto;
+    font-size: 56px;
+  }
+  h1::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 1px;
+    width: 200px;
+    transform: translateX(-50%);
+  }
+  .main-img{
+    margin-bottom: 0;
+    width: 100%;
+    margin-bottom: -6px;
+  }
+  .reverse-flex{
+    flex-direction: column-reverse;
+  }
+  
+  /*Moblie sections styling especially that violetbox styling*/
+  
+  section.container{
+    width:90%;
+  }
+  .bg-dark-voilet{
+    background-image: url("./images/bg-pattern-how-we-work-mobile.svg");
+    padding: 45px;
+    background-image: url("./images/bg-pattern-how-we-work-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 54% 100%;
+  }
+  .bg-dark-voilet h2{
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  /*Moblie Footer styling*/
+  
+  footer{
+    background-image: url(./images/bg-pattern-footer-mobile.svg);
+    background-size: 100% 14%;
+  }
+
+  footer ul.flex {
+    flex-direction: row;
+  
+  }
+
 }
