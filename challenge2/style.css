@@ -257,7 +257,7 @@ svg:hover {
   nav.navbar button {
     border: 0;
   }
-
+   /*For toggle button*/
   nav.navbar .hamburger {
     background-color: transparent;
     border: 0px;
@@ -274,6 +274,7 @@ svg:hover {
   nav .hamburger.show .close {
     display: block;
   }
+  
   nav ul.show {
     background-color: #2b272f;
     display: flex;
