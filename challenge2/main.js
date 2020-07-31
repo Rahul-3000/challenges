@@ -19,6 +19,8 @@ toggle.addEventListener('click', () => {
 }
 );
 
+/*For social share icons*/
+
 const fb_btn = document.querySelector("a.FB");
 const twitter_btn = document.querySelector("a.twitter");
 const pinterest_btn = document.querySelector("a.pintrest");

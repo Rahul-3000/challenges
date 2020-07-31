@@ -7,7 +7,7 @@
 /* heading: font-family: 'DM Serif Display', serif; */
 /* body : font-family: 'Karla', sans-serif; */
 
-/*Intial css to*/
+/*Intial css to structure doc.*/
 * {
   box-sizing: border-box;
 }
@@ -33,7 +33,6 @@ h3 {
   border: 2px solid white;
   padding: 8px 16px;
   margin-top: 24px;
-  /* display: inline-block; */
   color: white;
   background-color: transparent;
   cursor: pointer;
@@ -42,7 +41,6 @@ h3 {
 }
 .btn-nav {
   color: #2d2640;
-  /* display: inline-block; */
   border: 2px solid #2d2640;
 }
 
@@ -98,6 +96,7 @@ nav.navbar li a {
 }
 
 /*styling the header section*/
+
 header {
   background-color: #2d2640;
   color: white;
@@ -216,6 +215,9 @@ footer li a {
   color: #2d2640;
   text-transform: uppercase;
   text-decoration: none;
+}
+footer li a:hover{
+  text-decoration: underline #2d2640;
 }
 svg {
   fill: #837d88;
