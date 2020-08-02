@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+}
+ body{
+   background-color: #F37121;
+   margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+ } 
+ 
+ .flex{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin:100px;
+   
+  
+ }
+ section .flex{
+   margin: 40px 0 0 0;
+ }
+ section h2{
+   margin: auto;
+   border:0;
+   margin:0;
+   margin-right: 45px;
+   padding:32px;
+ }
+ .work img{
+   width: 300px;
+   height: 300px;
+ }
+ 
+  div.mid{
+    box-sizing: border-box;
+    padding: 6px;
+    margin:auto;
+    height: 40px;
+    
+  }
+  
+  div.home{
+    display: inline-block;
+    margin-top: 80px;
+    padding: 8px;width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    
+  }
+  div.home button{
+    width: fit-content;
+    display: inline-block;
+    text-align: center;
+    margin: 16px 8px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #111D5E;
+    cursor: pointer;
+  }
+  div.home button a:hover , div.home button:hover{
+    background-color:#C70039;
+    color: whitesmoke;
+  }
+
+  ul {
+    list-style-type: none;
+    margin:0;
+    border-radius: 7px;
+    padding: 6px;
+    background-color: #111D5E;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  li {
+    float: right;
+  }
+  .nav{
+    position: sticky;
+  }
+  li a,a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #FFBD69; 
+    margin-bottom: 10px;
+    position: relative;
+  }
+  li a:hover{
+    color: whitesmoke;
+  }
+  input[type=text],input[type=email] ,select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: fit-content;
+    display: inline-block;
+    
+    padding: 14px 20px;
+    
+    margin-left: 160px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:#C70039;
+    color: whitesmoke;
+    
+  }
+  
+  div {
+    border-radius: 5px;
+    
+    padding: 20px;
+  }
+  p.intro{
+    display : inline-block;
+    
+    margin-left: 80px;
+    margin-right: 80px;
+    color:whitesmoke;
+  }
+  
+ div.skill summary{
+   border:none;
+   width: fit-content;
+   margin: 20px;
+   padding: 5px;
+
+ }
+ div.skill{
+   margin: 80px 80px;
+   padding: 10px;
+ }
+
+ @media screen and (max-width:768px){
+    .flex{
+      flex-direction: column;
+    }
+ }
